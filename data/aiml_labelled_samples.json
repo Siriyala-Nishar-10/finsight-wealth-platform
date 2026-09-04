@@ -1,0 +1,352 @@
+[
+    {
+        "id": 1,
+        "question": "What symptoms are associated with Type 2 diabetes?",
+        "context": "Type 2 diabetes presents with increased thirst, frequent urination, unexplained weight loss, fatigue, blurred vision, and slow-healing sores. Fasting blood glucose ≥ 126 mg\/dL on two separate tests confirms diagnosis.",
+        "answer": "Increased thirst, frequent urination, fatigue, blurred vision, unexplained weight loss, slow-healing sores",
+        "label": "relevant"
+    },
+    {
+        "id": 2,
+        "question": "How is hypertension classified?",
+        "context": "Hypertension is classified by the ACC\/AHA: Normal <120\/80 mmHg, Elevated 120-129\/<80, Stage 1 130-139\/80-89, Stage 2 ≥140\/90 mmHg. Hypertensive crisis is >180\/120 mmHg.",
+        "answer": "Normal <120\/80; Elevated 120-129\/<80; Stage 1 130-139\/80-89; Stage 2 ≥140\/90",
+        "label": "relevant"
+    },
+    {
+        "id": 3,
+        "question": "What is the first-line treatment for bacterial pneumonia?",
+        "context": "Community-acquired bacterial pneumonia is typically treated with amoxicillin-clavulanate or a macrolide antibiotic such as azithromycin. Severe cases or hospital-acquired infections may require beta-lactam plus macrolide or fluoroquinolone.",
+        "answer": "Amoxicillin-clavulanate or azithromycin (macrolide)",
+        "label": "relevant"
+    },
+    {
+        "id": 4,
+        "question": "Which biomarker indicates acute myocardial infarction?",
+        "context": "Troponin I and Troponin T are the preferred biomarkers for diagnosing acute myocardial infarction. They rise within 2-4 hours, peak at 12-24 hours, and remain elevated for 7-10 days. CK-MB is an older marker with lower specificity.",
+        "answer": "Troponin I and Troponin T",
+        "label": "relevant"
+    },
+    {
+        "id": 5,
+        "question": "What BMI range is classified as obese?",
+        "context": "Body Mass Index (BMI) classifications: Underweight <18.5, Normal 18.5-24.9, Overweight 25-29.9, Obese ≥30, Morbidly obese ≥40. BMI is calculated as weight(kg)\/height(m)².",
+        "answer": "BMI ≥ 30",
+        "label": "relevant"
+    },
+    {
+        "id": 6,
+        "question": "What is the optimal soil pH for wheat cultivation?",
+        "context": "Wheat grows best in well-drained loamy soils with a pH of 6.0 to 7.0. Soils below pH 5.5 may cause aluminium and manganese toxicity. Lime application corrects acidic soils.",
+        "answer": "pH 6.0 to 7.0",
+        "label": "relevant"
+    },
+    {
+        "id": 7,
+        "question": "What causes leaf blight in rice?",
+        "context": "Bacterial leaf blight in rice is caused by Xanthomonas oryzae pv. oryzae. It enters through water pores and wounds, causing water-soaked lesions that turn yellow to white. Management includes resistant varieties and copper-based bactericides.",
+        "answer": "Xanthomonas oryzae pv. oryzae",
+        "label": "relevant"
+    },
+    {
+        "id": 8,
+        "question": "How is NDVI used in crop monitoring?",
+        "context": "Normalized Difference Vegetation Index (NDVI) uses near-infrared and red reflectance to assess plant health. NDVI = (NIR - Red)\/(NIR + Red). Values range from -1 to 1; healthy dense vegetation shows 0.6–0.9, stressed crops 0.2–0.5.",
+        "answer": "NDVI uses near-infrared and red reflectance. Healthy crops show 0.6–0.9; stressed crops 0.2–0.5",
+        "label": "relevant"
+    },
+    {
+        "id": 9,
+        "question": "What is drip irrigation efficiency compared to flood irrigation?",
+        "context": "Drip irrigation delivers water directly to the root zone with 90-95% efficiency compared to flood irrigation at 60-70% and sprinkler at 75-80%. It reduces water usage by 30-50% while maintaining or improving yields.",
+        "answer": "90-95% efficiency vs 60-70% for flood irrigation",
+        "label": "relevant"
+    },
+    {
+        "id": 10,
+        "question": "What does a low soil nitrogen reading indicate?",
+        "context": "Soil nitrogen below 20 ppm in the root zone indicates nitrogen deficiency, which manifests as yellowing of older leaves (chlorosis), stunted growth, and reduced yield. Application of urea (46% N) or ammonium nitrate is recommended.",
+        "answer": "Nitrogen deficiency — yellowing of older leaves, stunted growth, reduced yield",
+        "label": "relevant"
+    },
+    {
+        "id": 11,
+        "question": "What is the debt-to-equity ratio formula?",
+        "context": "Debt-to-Equity Ratio = Total Liabilities \/ Shareholders' Equity. A ratio above 2.0 is generally considered high leverage. It measures the proportion of financing from creditors versus shareholders.",
+        "answer": "Total Liabilities \/ Shareholders' Equity",
+        "label": "relevant"
+    },
+    {
+        "id": 12,
+        "question": "How is compound annual growth rate (CAGR) calculated?",
+        "context": "CAGR = (Ending Value \/ Beginning Value)^(1\/n) - 1, where n is the number of years. It represents the mean annual growth rate over a period longer than one year, smoothing out volatility.",
+        "answer": "(Ending Value \/ Beginning Value)^(1\/n) - 1",
+        "label": "relevant"
+    },
+    {
+        "id": 13,
+        "question": "What is working capital?",
+        "context": "Working Capital = Current Assets - Current Liabilities. Positive working capital means a company can meet short-term obligations. Negative working capital may indicate liquidity risk. Key components are inventory, receivables, payables, and cash.",
+        "answer": "Current Assets minus Current Liabilities",
+        "label": "relevant"
+    },
+    {
+        "id": 14,
+        "question": "What is the difference between gross margin and net margin?",
+        "context": "Gross Margin = (Revenue - COGS) \/ Revenue. Net Margin = Net Profit \/ Revenue. Gross margin measures production efficiency; net margin reflects overall profitability after all expenses including operating costs, interest, and taxes.",
+        "answer": "Gross margin = (Revenue - COGS)\/Revenue; Net margin = Net Profit\/Revenue",
+        "label": "relevant"
+    },
+    {
+        "id": 15,
+        "question": "What does a P\/E ratio of 25 mean?",
+        "context": "A Price-to-Earnings ratio of 25 means investors pay ₹25 for every ₹1 of earnings. It reflects growth expectations; high P\/E suggests the market anticipates strong future growth. The market average P\/E for Indian equities is typically 18-22.",
+        "answer": "Investors pay ₹25 for every ₹1 of annual earnings",
+        "label": "relevant"
+    },
+    {
+        "id": 16,
+        "question": "What is precision in a classification model?",
+        "context": "Precision = True Positives \/ (True Positives + False Positives). It measures the accuracy of positive predictions. High precision means few false alarms. In spam detection, high precision means most flagged emails are actually spam.",
+        "answer": "True Positives \/ (True Positives + False Positives)",
+        "label": "relevant"
+    },
+    {
+        "id": 17,
+        "question": "What is the purpose of a train-test split?",
+        "context": "A train-test split divides the dataset into a training set (typically 70-80%) for model learning and a test set (20-30%) for evaluating generalization. It prevents overfitting and gives an unbiased estimate of model performance on unseen data.",
+        "answer": "To evaluate model generalization on unseen data and prevent overfitting",
+        "label": "relevant"
+    },
+    {
+        "id": 18,
+        "question": "What does an ROC-AUC score of 0.85 indicate?",
+        "context": "ROC-AUC (Area Under the Receiver Operating Characteristic Curve) of 0.85 indicates good discriminatory ability — the model correctly ranks a random positive above a random negative 85% of the time. Scores: 0.5 = random, 0.7-0.8 = acceptable, 0.8-0.9 = excellent.",
+        "answer": "Good model — correctly ranks positive above negative 85% of the time",
+        "label": "relevant"
+    },
+    {
+        "id": 19,
+        "question": "What is the purpose of SMOTE in imbalanced datasets?",
+        "context": "SMOTE (Synthetic Minority Over-sampling Technique) generates synthetic samples for the minority class by interpolating between existing minority samples. It addresses class imbalance without simply duplicating samples, reducing overfitting.",
+        "answer": "Generates synthetic minority class samples to balance imbalanced datasets",
+        "label": "relevant"
+    },
+    {
+        "id": 20,
+        "question": "What is the difference between classification and regression?",
+        "context": "Classification predicts discrete class labels (e.g., spam\/not-spam, disease\/no-disease). Regression predicts continuous numerical values (e.g., house price, temperature). Common classifiers: logistic regression, decision trees, SVM. Regressors: linear regression, random forest regressor.",
+        "answer": "Classification predicts discrete labels; regression predicts continuous values",
+        "label": "relevant"
+    },
+    {
+        "id": 21,
+        "question": "What F1-score threshold is acceptable for a medical screening model?",
+        "context": "Medical screening models typically require F1-score ≥ 0.85 with high recall (sensitivity ≥ 0.90) since false negatives (missed cases) are more costly than false positives. Low recall in screening is clinically unacceptable.",
+        "answer": "F1 ≥ 0.85, recall (sensitivity) ≥ 0.90",
+        "label": "relevant"
+    },
+    {
+        "id": 22,
+        "question": "What is feature engineering?",
+        "context": "Feature engineering is the process of using domain knowledge to create, transform, or select input variables that improve model performance. Examples: extracting age from DOB, creating interaction terms, log-transforming skewed distributions, encoding categorical variables.",
+        "answer": "Creating or transforming input variables using domain knowledge to improve model performance",
+        "label": "relevant"
+    },
+    {
+        "id": 23,
+        "question": "What is cross-validation?",
+        "context": "Cross-validation (typically k-fold) splits data into k subsets, trains on k-1 folds and tests on the remaining fold, repeating k times. The average performance across folds gives a more reliable estimate than a single train-test split.",
+        "answer": "Splitting data into k folds and averaging performance across k train-test iterations",
+        "label": "relevant"
+    },
+    {
+        "id": 24,
+        "question": "What does regularization prevent?",
+        "context": "Regularization (L1\/Lasso, L2\/Ridge) penalizes model complexity to prevent overfitting. L1 regularization promotes sparsity by shrinking some weights to zero. L2 penalizes large weights, producing smaller, distributed coefficients.",
+        "answer": "Overfitting by penalizing model complexity",
+        "label": "relevant"
+    },
+    {
+        "id": 25,
+        "question": "What is hyperparameter tuning?",
+        "context": "Hyperparameter tuning is the process of finding optimal model configuration values (learning rate, max depth, number of estimators) that are not learned from training data. Methods include grid search, random search, and Bayesian optimization.",
+        "answer": "Finding optimal model configuration values not learned during training",
+        "label": "relevant"
+    },
+    {
+        "id": 26,
+        "question": "What is the vanishing gradient problem?",
+        "context": "In deep neural networks, gradients can become extremely small as they propagate back through many layers, making early layers train very slowly or stop learning. Solutions include ReLU activation, batch normalisation, skip connections (ResNets), and gradient clipping.",
+        "answer": "Gradients shrink to near-zero in early layers of deep networks, slowing or halting learning",
+        "label": "relevant"
+    },
+    {
+        "id": 27,
+        "question": "What is a confusion matrix?",
+        "context": "A confusion matrix is a table showing actual vs. predicted class counts: True Positives (TP), False Positives (FP), True Negatives (TN), False Negatives (FN). From it you derive accuracy, precision, recall, and F1-score.",
+        "answer": "A table of TP, FP, TN, FN counts between actual and predicted classes",
+        "label": "relevant"
+    },
+    {
+        "id": 28,
+        "question": "What is transfer learning?",
+        "context": "Transfer learning reuses a pre-trained model (trained on a large dataset like ImageNet or PubMed) as the starting point for a new, smaller task. Fine-tuning the last layers on domain-specific data requires far less data and compute than training from scratch.",
+        "answer": "Reusing a pre-trained model and fine-tuning it on a smaller domain-specific dataset",
+        "label": "relevant"
+    },
+    {
+        "id": 29,
+        "question": "What is the curse of dimensionality?",
+        "context": "As the number of features increases, the volume of the feature space grows exponentially, making data increasingly sparse. Models require exponentially more data to maintain performance. PCA and feature selection help reduce dimensionality.",
+        "answer": "Feature space grows exponentially with more dimensions, causing sparsity and model degradation",
+        "label": "relevant"
+    },
+    {
+        "id": 30,
+        "question": "What is a recommendation system?",
+        "context": "A recommendation system predicts user preferences and suggests relevant items. Collaborative filtering uses user-item interactions; content-based filtering uses item features; hybrid systems combine both. Popular libraries: Surprise, LightFM, implicit.",
+        "answer": "A system that predicts user preferences to suggest relevant items",
+        "label": "relevant"
+    },
+    {
+        "id": 31,
+        "question": "What is gradient boosting?",
+        "context": "Gradient boosting builds an ensemble of weak learners (typically decision trees) sequentially, where each new tree corrects the errors of the previous ensemble. XGBoost, LightGBM, and CatBoost are popular implementations, often winning tabular data competitions.",
+        "answer": "An ensemble method building trees sequentially, each correcting prior errors",
+        "label": "relevant"
+    },
+    {
+        "id": 32,
+        "question": "What does SHAP explain?",
+        "context": "SHAP (SHapley Additive exPlanations) assigns each feature an importance value for a specific prediction, based on game theory Shapley values. It explains how much each feature contributed to pushing the prediction above or below the average prediction.",
+        "answer": "How much each feature contributed to a specific model prediction",
+        "label": "relevant"
+    },
+    {
+        "id": 33,
+        "question": "What is a pipeline in scikit-learn?",
+        "context": "A scikit-learn Pipeline chains preprocessing steps and a model into a single object that can be fit and evaluated together. It prevents data leakage by ensuring transformations (e.g., scaling, imputation) are fit only on training data.",
+        "answer": "A chain of preprocessing steps and model that prevents data leakage",
+        "label": "relevant"
+    },
+    {
+        "id": 34,
+        "question": "What is batch normalisation?",
+        "context": "Batch normalisation normalises layer inputs to have zero mean and unit variance during training, using learnable scale and shift parameters. It speeds up training, acts as a regulariser, and allows higher learning rates in deep networks.",
+        "answer": "Normalises layer inputs to zero mean\/unit variance to speed training and improve stability",
+        "label": "relevant"
+    },
+    {
+        "id": 35,
+        "question": "What is an epoch in neural network training?",
+        "context": "One epoch is a complete pass through the entire training dataset. Models typically train for 10-100+ epochs depending on dataset size and task complexity. Too few epochs = underfitting; too many = overfitting. Early stopping monitors validation loss.",
+        "answer": "One complete pass through the entire training dataset",
+        "label": "relevant"
+    },
+    {
+        "id": 36,
+        "question": "What is the difference between supervised and unsupervised learning?",
+        "context": "Supervised learning trains on labelled data (input-output pairs) to predict outputs for new inputs. Examples: classification, regression. Unsupervised learning finds structure in unlabelled data. Examples: clustering (K-means), dimensionality reduction (PCA).",
+        "answer": "Supervised uses labelled data to predict outputs; unsupervised finds structure in unlabelled data",
+        "label": "relevant"
+    },
+    {
+        "id": 37,
+        "question": "What is data normalisation and why is it important?",
+        "context": "Normalisation scales features to a common range (e.g., 0-1 for min-max, or zero mean\/unit variance for standardisation). It prevents features with large numerical ranges from dominating models like SVMs, KNN, and gradient descent-based methods.",
+        "answer": "Scaling features to a common range to prevent dominance by high-magnitude features",
+        "label": "relevant"
+    },
+    {
+        "id": 38,
+        "question": "What is a random forest?",
+        "context": "A random forest is an ensemble of decision trees, each trained on a random bootstrap sample of the data, with random feature subsets considered at each split. Final prediction is by majority vote (classification) or mean (regression). It is robust to overfitting.",
+        "answer": "An ensemble of decision trees using bootstrap sampling and random feature subsets",
+        "label": "relevant"
+    },
+    {
+        "id": 39,
+        "question": "What is a learning rate?",
+        "context": "The learning rate controls how much model weights are updated at each training step in gradient descent. Too high: model may diverge. Too low: training is slow and may get stuck. Adaptive optimisers (Adam, RMSProp) adjust the learning rate per parameter.",
+        "answer": "Controls the step size of weight updates during gradient descent",
+        "label": "relevant"
+    },
+    {
+        "id": 40,
+        "question": "What is the difference between a model's accuracy and its F1-score?",
+        "context": "Accuracy = (TP+TN)\/(TP+TN+FP+FN). It is misleading on imbalanced datasets — a model predicting the majority class always achieves high accuracy. F1-score = 2*(Precision*Recall)\/(Precision+Recall) and is preferred for imbalanced classes.",
+        "answer": "Accuracy is unreliable on imbalanced data; F1 balances precision and recall",
+        "label": "relevant"
+    },
+    {
+        "id": 41,
+        "question": "What is tokenisation in NLP?",
+        "context": "Tokenisation splits text into individual tokens (words, subwords, or characters). Word tokenisation splits on whitespace; subword tokenisation (BPE, WordPiece) handles unknown words and morphological variations. Libraries: NLTK, spaCy, HuggingFace tokenizers.",
+        "answer": "Splitting text into individual tokens for NLP model input",
+        "label": "relevant"
+    },
+    {
+        "id": 42,
+        "question": "What is the elbow method in K-means clustering?",
+        "context": "The elbow method plots inertia (sum of squared distances to cluster centroids) against the number of clusters k. The optimal k is where the curve bends sharply like an elbow — additional clusters yield diminishing improvement. Also use silhouette score.",
+        "answer": "Plotting inertia vs k to find the optimal number of clusters where improvement plateaus",
+        "label": "relevant"
+    },
+    {
+        "id": 43,
+        "question": "What does explainability mean in AI?",
+        "context": "Explainability (or interpretability) refers to the degree to which humans can understand why a model made a specific prediction. Intrinsically interpretable models (linear regression, decision trees) are transparent. Black-box models (neural nets) require post-hoc techniques like SHAP or LIME.",
+        "answer": "The ability to understand and explain why a model made a specific prediction",
+        "label": "relevant"
+    },
+    {
+        "id": 44,
+        "question": "What is the purpose of a validation set?",
+        "context": "A validation set is a subset of training data held out during training to tune hyperparameters and monitor for overfitting. It is distinct from the test set. The test set is used only once for final evaluation; the validation set guides model development.",
+        "answer": "To tune hyperparameters and monitor overfitting during model development",
+        "label": "relevant"
+    },
+    {
+        "id": 45,
+        "question": "What is a sigmoid activation function?",
+        "context": "Sigmoid σ(x) = 1\/(1+e^(-x)) maps any real value to (0,1), making it suitable for binary classification output layers. For hidden layers, ReLU is preferred as sigmoid suffers from vanishing gradients for very large\/small inputs.",
+        "answer": "Maps input to (0,1); used for binary classification outputs; suffers vanishing gradient in hidden layers",
+        "label": "relevant"
+    },
+    {
+        "id": 46,
+        "question": "What is dropout in neural networks?",
+        "context": "Dropout randomly deactivates a fraction p (typically 0.2-0.5) of neurons during each training step. This forces the network to learn redundant representations and reduces overfitting. Dropout is disabled during inference.",
+        "answer": "Randomly deactivates neurons during training to prevent overfitting",
+        "label": "relevant"
+    },
+    {
+        "id": 47,
+        "question": "What is a confusion matrix used for?",
+        "context": "A confusion matrix is used to evaluate classification model performance by showing the counts of correct and incorrect predictions for each class. It helps identify which classes the model confuses (misclassifies), guiding targeted improvements.",
+        "answer": "Evaluating classification performance and identifying which classes are confused",
+        "label": "irrelevant"
+    },
+    {
+        "id": 48,
+        "question": "What library is used for XGBoost in Python?",
+        "context": "XGBoost can be used via the xgboost Python package (`pip install xgboost`). The API is sklearn-compatible: `XGBClassifier()` for classification, `XGBRegressor()` for regression. It also supports scikit-learn pipelines.",
+        "answer": "The xgboost Python package",
+        "label": "relevant"
+    },
+    {
+        "id": 49,
+        "question": "What is a REST API?",
+        "context": "A REST API (Representational State Transfer Application Programming Interface) is an architectural style for web services that uses HTTP methods (GET, POST, PUT, DELETE) and returns JSON or XML. FastAPI is a modern Python framework for building REST APIs with automatic documentation.",
+        "answer": "A web API using HTTP methods (GET\/POST\/PUT\/DELETE) returning JSON; FastAPI is a common Python implementation",
+        "label": "relevant"
+    },
+    {
+        "id": 50,
+        "question": "What does MLflow track?",
+        "context": "MLflow is an open-source platform to manage the ML lifecycle. It tracks experiments (parameters, metrics, code version), packages models as reusable artefacts, and supports deployment. Key components: Tracking, Projects, Models, Registry.",
+        "answer": "ML experiments including parameters, metrics, model versions, and artefacts",
+        "label": "relevant"
+    }
+]

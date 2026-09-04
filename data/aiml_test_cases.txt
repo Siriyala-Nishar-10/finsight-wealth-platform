@@ -1,0 +1,24 @@
+# Cynaris Internship Programme — AI/ML Project Test Cases
+# Use these to validate your model outputs and business logic
+# Format: ID | Input scenario | Expected output | Category
+
+TEST_1: Input: 'Patient has HbA1c of 7.8% and fasting glucose 145 mg/dL' | Expected: 'diabetic_risk:high' | Category: healthcare_diagnosis
+TEST_2: Input: 'Soil pH 5.2, nitrogen 12 ppm, crop: wheat' | Expected: 'recommendation:apply_lime_and_nitrogen_fertiliser' | Category: agri_recommendation
+TEST_3: Input: 'Revenue ₹8.5Cr, COGS ₹3.8Cr, operating expenses ₹2.1Cr' | Expected: 'gross_margin:55.3%, operating_margin:30.6%' | Category: finance_calculation
+TEST_4: Input: 'Customer complaint: order arrived damaged, want refund' | Expected: 'intent:return_request, sentiment:negative' | Category: nlp_classification
+TEST_5: Input: 'NDVI reading 0.28 for crop field in week 6' | Expected: 'crop_health:stressed, action:inspect_for_disease_or_drought' | Category: agri_monitoring
+TEST_6: Input: 'Blood pressure reading 148/95 mmHg, age 52' | Expected: 'classification:stage_2_hypertension, action:refer_to_physician' | Category: healthcare_diagnosis
+TEST_7: Input: 'Model precision 0.91, recall 0.74 on disease screening test' | Expected: 'verdict:recall_too_low_for_medical_screening, threshold_adjustment:lower' | Category: model_evaluation
+TEST_8: Input: 'User viewed 12 products, added 2 to cart, purchased 0' | Expected: 'segment:high_browse_low_convert, recommendation:trigger_discount_email' | Category: ecommerce_behaviour
+TEST_9: Input: 'Training loss 0.12, validation loss 0.31 after 50 epochs' | Expected: 'status:overfitting, action:add_dropout_or_early_stopping' | Category: model_diagnostics
+TEST_10: Input: 'Loan applicant: income ₹42000/mo, EMI ₹18500/mo, CIBIL 710' | Expected: 'debt_service_ratio:44%, credit_decision:borderline_review' | Category: finance_risk
+TEST_11: Input: 'Wheat field with yellowing lower leaves, dark green upper leaves' | Expected: 'diagnosis:nitrogen_deficiency, treatment:urea_top_dressing' | Category: agri_diagnosis
+TEST_12: Input: 'Classify: 'I need to cancel my subscription immediately'' | Expected: 'intent:cancellation_request, urgency:high, churn_risk:high' | Category: nlp_classification
+TEST_13: Input: 'SKU gross margin 18%, category average 34%' | Expected: 'status:below_category_benchmark, action:review_cogs_or_price' | Category: finance_analysis
+TEST_14: Input: 'Patient: cough 14 days, fever 38.9°C, SpO2 94%' | Expected: 'risk_flag:pneumonia_possible, action:chest_xray_ordered' | Category: healthcare_triage
+TEST_15: Input: 'Confusion matrix: TP=420, FP=38, TN=510, FN=32' | Expected: 'precision:0.917, recall:0.929, f1:0.923, accuracy:0.930' | Category: model_evaluation
+TEST_16: Input: 'Rainfall 220mm in June vs 10-yr average 310mm' | Expected: 'drought_risk:moderate, crop_impact:yield_reduction_15-25%' | Category: agri_weather
+TEST_17: Input: 'User inactive for 45 days, last login app, churn score 0.78' | Expected: 'action:send_winback_offer, channel:push_notification' | Category: ecommerce_retention
+TEST_18: Input: 'Features: age, bmi, bp, glucose, insulin. Target: diabetes_onset' | Expected: 'recommended_model:logistic_regression_or_random_forest, note:check_class_imbalance' | Category: model_selection
+TEST_19: Input: 'Crop: tomato. Spotted yellowing with concentric rings on leaves' | Expected: 'disease:early_blight_alternaria, treatment:mancozeb_fungicide' | Category: agri_diagnosis
+TEST_20: Input: 'Validate: ROC-AUC 0.67 on credit scoring model' | Expected: 'verdict:poor_discrimination, threshold:retrain_or_add_features' | Category: model_evaluation
