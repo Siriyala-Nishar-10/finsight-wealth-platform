@@ -1,0 +1,5 @@
+profile_id,risk_appetite,investment_horizon_yrs,capital_inr,min_equity_pct,max_equity_pct,expected_return_pct,max_drawdown_pct
+1,conservative,3,1000000,10,40,7.5,2.5
+2,moderate,7,250000,40,70,9.0,10.0
+3,aggressive,15,5000000,65,95,10.2,16.2
+4,very_aggressive,20,1000000,80,110,11.0,20.0
