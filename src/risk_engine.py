@@ -1,24 +1,23 @@
 """
-Maps a user's risk profile (Low/Medium/High) to portfolio constraints.
-To be implemented in Checkpoint 2/3.
+Maps a client risk profile row to portfolio optimization constraints.
 """
 
-from enum import Enum
+import pandas as pd
 
 
-class RiskProfile(str, Enum):
-    LOW = "low"
-    MEDIUM = "medium"
-    HIGH = "high"
+def get_risk_constraints(profile_row: pd.Series) -> dict:
+    """Extract optimization constraints from a risk profile row.
 
-
-def get_risk_constraints(profile: RiskProfile) -> dict:
-    """Return target volatility band and max single-asset weight
-    for a given risk profile.
-
-    TODO (Checkpoint 2): define actual thresholds, e.g.:
-    LOW    -> max_volatility=0.10, max_single_weight=0.20
-    MEDIUM -> max_volatility=0.18, max_single_weight=0.35
-    HIGH   -> max_volatility=0.30, max_single_weight=0.50
+    Returns min/max equity allocation (used to bound single-asset
+    concentration) and the target expected return / max drawdown for
+    reference against the optimized portfolio's actual results.
     """
-    raise NotImplementedError("Implement in Checkpoint 2")
+    return {
+        "risk_appetite": profile_row["risk_appetite"],
+        "min_equity_pct": profile_row["min_equity_pct"],
+        "max_equity_pct": profile_row["max_equity_pct"],
+        "target_expected_return_pct": profile_row["expected_return_pct"],
+        "max_drawdown_pct": profile_row["max_drawdown_pct"],
+        "capital_inr": profile_row["capital_inr"],
+        "investment_horizon_yrs": profile_row["investment_horizon_yrs"],
+    }

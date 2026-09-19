@@ -1,30 +1,28 @@
 """
 Data loading and preprocessing for the FinSight portfolio optimizer.
-To be implemented in Checkpoint 2.
+Uses real client-provided NSE price data (finsight_portfolio_data.csv).
 """
 
 from pathlib import Path
 import pandas as pd
 
+TRADING_DAYS_PER_YEAR = 252
+
 
 def load_price_data(csv_path: Path) -> pd.DataFrame:
     """Load historical asset price data from CSV.
 
-    Expected columns: date, asset_ticker, close_price
-    Returns a wide-format DataFrame: index=date, columns=tickers.
-
-    TODO (Checkpoint 2): implement loading from aiml_training_data.csv,
-    handle missing dates/assets, pivot to wide format.
+    Expects a wide-format CSV: first column 'date', remaining columns
+    are ticker prices (one column per asset, including the market
+    benchmark 'market_nifty50').
     """
-    raise NotImplementedError("Implement in Checkpoint 2")
+    df = pd.read_csv(csv_path, parse_dates=["date"], index_col="date")
+    return df
 
 
 def compute_daily_returns(prices: pd.DataFrame) -> pd.DataFrame:
-    """Convert a wide price DataFrame into daily percentage returns.
-
-    TODO (Checkpoint 2): prices.pct_change().dropna()
-    """
-    raise NotImplementedError("Implement in Checkpoint 2")
+    """Convert a wide price DataFrame into daily percentage returns."""
+    return prices.pct_change().dropna()
 
 
 def annualize_returns_and_covariance(
@@ -32,6 +30,15 @@ def annualize_returns_and_covariance(
 ) -> tuple[pd.Series, pd.DataFrame]:
     """Annualize mean daily returns and the covariance matrix.
 
-    TODO (Checkpoint 2): mean * 252 trading days, cov * 252.
+    Note: only 180 trading days (~9 months) of history are available,
+    so these are short-sample estimates — a real production system
+    would use several years of history for more stable estimates.
     """
-    raise NotImplementedError("Implement in Checkpoint 2")
+    annual_returns = daily_returns.mean() * TRADING_DAYS_PER_YEAR
+    annual_cov = daily_returns.cov() * TRADING_DAYS_PER_YEAR
+    return annual_returns, annual_cov
+
+
+def load_risk_profiles(csv_path: Path) -> pd.DataFrame:
+    """Load the client's 4 investor risk archetypes."""
+    return pd.read_csv(csv_path)
