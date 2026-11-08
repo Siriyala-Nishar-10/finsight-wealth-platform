@@ -1,0 +1,25 @@
+# Core model
+numpy
+pandas
+scipy
+scikit-learn
+
+# API
+fastapi
+uvicorn[standard]
+pydantic
+
+# Dashboard
+streamlit
+plotly
+requests
+
+# Testing and load testing
+pytest
+httpx
+locust
+
+# Existing experiment tracking / notebook workflow
+mlflow
+jupyter
+matplotlib
