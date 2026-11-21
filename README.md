@@ -17,7 +17,7 @@ A portfolio optimization engine for a SEBI-registered robo-advisory platform. Ac
 - [x] Checkpoint 2 (Week 3) — Data Pipeline + Baseline Model
 - [x] Checkpoint 3 (Week 6) — Core Model + Experimentation
 - [x] Checkpoint 4 (Week 9) — Integration + Testing
-- [ ] Checkpoint 5 (Week 12) — Final Demo + Model Card
+- [x] Checkpoint 5 (Week 12) — Final Demo + Model Card
 
 Checkpoints 1–4 are approved in the Cynaris project tracker. Checkpoint 5 remains pending mentor review until the live demo, model card, final code, and passing CI evidence have been submitted and accepted.
 
